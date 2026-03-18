@@ -13,7 +13,7 @@ const HeroSection = () => (
         className="text-right"
       >
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.2] md:leading-[1.2] lg:leading-[1.2] text-foreground">
-          منصة التعليم الطبي الأكثر استقرارًا في المنطقة –{" "}
+          منصة التعليم الطبي الأكثر استقرارًا في المنطقة{" "}
           <span className="text-gradient">تخدم +30,000 طبيب</span>{" "}
           في سوق جاهز للتحول الرقمي
         </h1>
@@ -23,11 +23,7 @@ const HeroSection = () => (
         <p className="mt-3 text-muted-foreground leading-relaxed max-w-xl">
           نظام رقمي متكامل يمكّن المؤسسات الطبية والأطباء من التعلم والتقييم والتدريب ضمن منصة واحدة قابلة للتوسع إقليمياً.
         </p>
-        <div className="mt-8 flex flex-wrap gap-4 justify-start">
-          <Button size="lg" className="text-base px-8">
-            تحميل Investor Brief
-          </Button>
-        </div>
+
       </motion.div>
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
@@ -35,7 +31,12 @@ const HeroSection = () => (
         transition={{ duration: 0.7, delay: 0.2 }}
         className="flex justify-center"
       >
-        <img src={heroImg} alt="Medical Education" className="w-full max-w-md" />
+        <img 
+          src={heroImg} 
+          alt="Medical Education" 
+          className="w-full max-w-md drop-shadow-2xl mix-blend-multiply brightness-[1.1] contrast-[1.1]" 
+          style={{ maskImage: 'radial-gradient(circle, black 70%, transparent 100%)', WebkitMaskImage: 'radial-gradient(circle, black 70%, transparent 100%)' }}
+        />
       </motion.div>
     </div>
   </section>

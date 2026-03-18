@@ -7,6 +7,7 @@ const painPoints = [
   "غياب أنظمة تحليل بيانات تقيس تطور أداء الأطباء والمتدربين",
   "ارتفاع تكلفة إنتاج المحتوى الطبي وصعوبة تطويره بسرعة",
   "صعوبة توسع البرامج التدريبية الطبية للمؤسسات التعليمية",
+  "صعوبة مواكبة التطورات الطبية المتسارعة في المناهج التقليدية",
 ];
 
 const ProblemSection = () => (
@@ -19,13 +20,13 @@ const ProblemSection = () => (
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-          فجوة رقمية ضخمة في التعليم الطبي — <span className="text-gradient">وفرصة استثمارية واضحة</span>
+          فجوة رقمية ضخمة في التعليم الطبي <span className="text-gradient">وفرصة استثمارية واضحة</span>
         </h2>
         <p className="mt-4 text-muted-foreground text-lg max-w-3xl leading-relaxed">
           قطاع التعليم الطبي سوق بمليارات الدولارات لكنه ما زال يعتمد على نماذج تقليدية لا تستخدم بنية رقمية متكاملة. مما يخلق فجوة بين الدراسة والممارسة ويمنح سوقاً جاهزاً للتحول الرقمي.
         </p>
         <p className="mt-2 text-primary font-semibold text-lg">
-          هذه الفجوة ليست تحديًا — بل فرصة لبناء معيار جديد للتعليم الطبي.
+          هذه الفجوة ليست تحديًا بل فرصة لبناء معيار جديد للتعليم الطبي.
         </p>
       </motion.div>
       <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

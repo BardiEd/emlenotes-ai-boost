@@ -7,6 +7,7 @@ const streams = [
   "برامج CPD معتمدة",
   "حلول تعليمية White Label",
   "لوحات تحكم وتحليلات للمؤسسات",
+  "خدمات استشارية تقنية",
 ];
 
 const BusinessModelSection = () => (

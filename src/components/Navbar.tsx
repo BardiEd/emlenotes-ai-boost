@@ -19,7 +19,6 @@ const Navbar = () => {
           <a href="#invest" className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium">الاستثمار</a>
         </div>
         <div className="hidden md:block">
-          <Button size="sm">احجز جلسة تعريفية</Button>
         </div>
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -34,7 +33,7 @@ const Navbar = () => {
             <a href="#products" className="text-muted-foreground text-sm py-1" onClick={() => setOpen(false)}>المنتجات</a>
             <a href="#traction" className="text-muted-foreground text-sm py-1" onClick={() => setOpen(false)}>السوق</a>
             <a href="#invest" className="text-muted-foreground text-sm py-1" onClick={() => setOpen(false)}>الاستثمار</a>
-            <Button size="sm" className="w-fit">احجز جلسة تعريفية</Button>
+
           </div>
         </div>
       )}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TrendingUp, Shield, Globe, Cpu, Users } from "lucide-react";
+import { TrendingUp, Shield, Globe, Cpu, Users, Zap } from "lucide-react";
 
 const reasons = [
   { icon: Globe, text: "سوق طبي ضخم وغير مخدوم رقميًا" },
@@ -7,6 +7,7 @@ const reasons = [
   { icon: Cpu, text: "بنية تقنية تقلل التكلفة وتزيد الهوامش" },
   { icon: Shield, text: "قابلية توسع إقليمية عالية" },
   { icon: Users, text: "فريق يجمع بين الخبرة الطبية والتكنولوجية" },
+  { icon: Zap, text: "حلول تعليمية مبتكرة تدعم المستقبل" },
 ];
 
 const WhyInvestSection = () => (
