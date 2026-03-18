@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Smartphone, Video, BookOpen, HelpCircle, Bot } from "lucide-react";
+import { Smartphone, Video, BookOpen, HelpCircle, Bot, Sparkles } from "lucide-react";
 
 const products = [
   { icon: Smartphone, name: "تطبيق إيملي", desc: "تجربة تعلم وتقييم موحدة" },
@@ -7,6 +7,7 @@ const products = [
   { icon: BookOpen, name: "الكتب الطبية المتكاملة", desc: "مراجع رقمية شاملة" },
   { icon: HelpCircle, name: "بنك الأسئلة الذكي", desc: "تقييم ذكي ومتكيف" },
   { icon: Bot, name: "المريض الافتراضي", desc: "قيد التطوير" },
+  { icon: Sparkles, name: "المنتج القادم", desc: "ترقبوا المزيد من الحلول قريباً" },
 ];
 
 const ProductsSection = () => (
