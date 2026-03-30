@@ -34,7 +34,7 @@ const HeroSection = () => (
         <img 
           src={heroImg} 
           alt="Medical Education" 
-          className="w-full max-w-md drop-shadow-2xl mix-blend-multiply brightness-[1.1] contrast-[1.1]" 
+          className="w-full max-w-md drop-shadow-2xl mix-blend-multiply" 
           style={{ maskImage: 'radial-gradient(circle, black 70%, transparent 100%)', WebkitMaskImage: 'radial-gradient(circle, black 70%, transparent 100%)' }}
         />
       </motion.div>

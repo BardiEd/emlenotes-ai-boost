@@ -16,13 +16,17 @@ const FinalCTA = () => (
           احجز جلسة استكشاف الاستثمار قبل الجولة القادمة في مستقبل التعليم الطبي
         </h2>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
-          <Button size="lg" className="text-base gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
-            <Phone size={18} />
-            احجز جلسة استثمارية (20 دقيقة)
+          <Button asChild size="lg" className="text-base gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
+            <a href="https://wa.me/message/AORIBIAVKSD7A1" target="_blank" rel="noopener noreferrer">
+              <Phone size={18} />
+              احجز جلسة استثمارية (20 دقيقة)
+            </a>
           </Button>
-          <Button size="lg" variant="secondary" className="text-base gap-2">
-            <Mail size={18} />
-            اطلب العرض الاستثماري
+          <Button asChild size="lg" variant="secondary" className="text-base gap-2">
+            <a href="https://wa.me/message/AORIBIAVKSD7A1" target="_blank" rel="noopener noreferrer">
+              <Mail size={18} />
+              اطلب العرض الاستثماري
+            </a>
           </Button>
         </div>
       </motion.div>

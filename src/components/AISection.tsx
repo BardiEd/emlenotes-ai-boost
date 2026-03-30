@@ -52,7 +52,7 @@ const AISection = () => (
           <img 
             src={aiIllustration} 
             alt="AI Technology" 
-            className="w-full max-w-md mx-auto mix-blend-multiply brightness-[1.1] contrast-[1.1]"
+            className="w-full max-w-md mx-auto mix-blend-multiply"
             style={{ maskImage: 'radial-gradient(circle, black 30%, transparent 100%)', WebkitMaskImage: 'radial-gradient(circle, black 30%, transparent 100%)' }}
           />
         </motion.div>
