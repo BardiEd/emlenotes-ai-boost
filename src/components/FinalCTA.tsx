@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Mail, Phone, FileText } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { Mail, Phone } from "lucide-react";
 
 const FinalCTA = () => (
-  <section className="py-24 relative z-10">
+  <section className="py-24 relative z-10 block pointer-events-auto">
     <div className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -16,23 +17,30 @@ const FinalCTA = () => (
           احجز جلسة استكشاف الاستثمار قبل الجولة القادمة في مستقبل التعليم الطبي
         </h2>
         <div className="mt-10 flex flex-wrap justify-center gap-4 relative z-30">
-          <Button 
-            size="lg" 
-            className="text-base gap-2 bg-primary text-primary-foreground hover:bg-primary/90 relative z-50 cursor-pointer pointer-events-auto"
-            onClick={() => window.open('https://wa.me/message/AORIBIAVKSD7A1', '_blank', 'noopener,noreferrer')}
+          <a
+            href="https://wa.me/message/AORIBIAVKSD7A1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              buttonVariants({ size: "lg", variant: "default" }),
+              "text-base gap-2 bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer pointer-events-auto relative z-50 flex"
+            )}
           >
             <Phone size={18} className="pointer-events-none" />
             احجز جلسة استثمارية (20 دقيقة)
-          </Button>
-          <Button 
-            size="lg" 
-            variant="secondary" 
-            className="text-base gap-2 relative z-50 cursor-pointer pointer-events-auto"
-            onClick={() => window.open('https://wa.me/message/AORIBIAVKSD7A1', '_blank', 'noopener,noreferrer')}
+          </a>
+          <a
+            href="https://wa.me/message/AORIBIAVKSD7A1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              buttonVariants({ size: "lg", variant: "secondary" }),
+              "text-base gap-2 cursor-pointer pointer-events-auto relative z-50 flex"
+            )}
           >
             <Mail size={18} className="pointer-events-none" />
             اطلب العرض الاستثماري
-          </Button>
+          </a>
         </div>
       </motion.div>
     </div>
