@@ -16,34 +16,31 @@ const FinalCTA = () => (
         <h2 className="text-3xl md:text-4xl font-extrabold text-primary-foreground">
           احجز جلسة استكشاف الاستثمار قبل الجولة القادمة في مستقبل التعليم الطبي
         </h2>
-        <div className="mt-10 flex flex-wrap justify-center gap-4 relative z-50 pointer-events-auto">
- 
-     <a
-    href="https://wa.me/message/AORIBIAVKSD7A1"
-    target="_blank"
-    rel="noopener noreferrer"
+        <div className="mt-10 flex flex-wrap justify-center gap-4 relative z-[999] pointer-events-auto">
+  <button
+    type="button"
+    onClick={() => window.open("https://wa.me/message/AORIBIAVKSD7A1", "_blank")}
     className={cn(
       buttonVariants({ size: "lg", variant: "default" }),
-      "inline-flex items-center justify-center text-base gap-2 bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer relative z-50 pointer-events-auto"
+      "inline-flex items-center justify-center text-base gap-2 bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer relative z-[999] pointer-events-auto"
     )}
   >
     <Phone size={18} className="pointer-events-none" />
     احجز جلسة استشارية (20 دقيقة)
-     </a>
+  </button>
 
-     <a
-    href="https://wa.me/message/AORIBIAVKSD7A1"
-    target="_blank"
-    rel="noopener noreferrer"
+  <button
+    type="button"
+    onClick={() => window.open("https://wa.me/message/AORIBIAVKSD7A1", "_blank")}
     className={cn(
       buttonVariants({ size: "lg", variant: "secondary" }),
-      "inline-flex items-center justify-center text-base gap-2 cursor-pointer relative z-50 pointer-events-auto"
+      "inline-flex items-center justify-center text-base gap-2 cursor-pointer relative z-[999] pointer-events-auto"
     )}
-      >
-     <Mail size={18} className="pointer-events-none" />
+  >
+    <Mail size={18} className="pointer-events-none" />
     اطلب العرض الاستشاري
-      </a>
-        </div>
+  </button>
+</div>
       </motion.div>
     </div>
   </section>
